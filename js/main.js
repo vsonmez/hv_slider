@@ -32,8 +32,44 @@ window.addEventListener("load", function () {
         bounce
     */
     var mysldier = new Slider({
-        container: "slider",
+        container: "slider_fade",
+        effect: "fade",
+        delay: 5000
+    });
+    mysldier.setData(data);
+    var mysldier = new Slider({
+        container: "slider_slide",
+        effect: "slide",
+        delay: 5000
+    });
+    mysldier.setData(data);
+    var mysldier = new Slider({
+        container: "slider_zoom",
         effect: "zoom",
+        delay: 5000
+    });
+    mysldier.setData(data);
+    var mysldier = new Slider({
+        container: "slider_rotate",
+        effect: "rotate",
+        delay: 5000
+    });
+    mysldier.setData(data);
+    var mysldier = new Slider({
+        container: "slider_flip",
+        effect: "flip",
+        delay: 5000
+    });
+    mysldier.setData(data);
+    var mysldier = new Slider({
+        container: "slider_light",
+        effect: "light",
+        delay: 5000
+    });
+    mysldier.setData(data);
+    var mysldier = new Slider({
+        container: "slider_bounce",
+        effect: "bounce",
         delay: 5000
     });
     mysldier.setData(data);
