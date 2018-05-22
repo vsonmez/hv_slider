@@ -27,7 +27,7 @@ var data = [
     }
 ];
 </pre>
-<b>Creating Slider</b>
+<h3>Creating Slider</h3>
 <i>main.js</i>
 <pre>
 window.addEventListener("load", function () {
