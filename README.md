@@ -2,13 +2,12 @@
 <strong>A lightweight javascript slider created with <a href="https://github.com/daneden/animate.css/" target="_new">Animate.css</a> and <a href="https://github.com/mikeric/rivets" target="_new">RivetsJS</a></strong>
 <p>Dinamik olarak JSON veri ile slider oluşturabileceğiniz bir javascript eklentisidir.  jQuery ve benzeri bir başka kütüphaneye ihtiyaç duymaz. Sadece RivetsJS ve Animate.css kullanılarak oluşturulmuştur.</p>
 
-<h2>Kullanımı</h2>
+<h2>Usage</h2>
 
-<b>Örnek Veri Yapısı</b>
+<b>Sample Data</b>
 
 <code>
-    <pre>
-    var data = [
+    <pre>var data = [
         {
             img: "img/slider_01.jpg",
             text: "lipsum 1"
@@ -29,6 +28,5 @@
             img: "img/slider_05.jpg",
             text: "lipsum 5"
         }
-    ];
-    </pre>
+    ];</pre>
 </code>
