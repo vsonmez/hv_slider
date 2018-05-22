@@ -61,13 +61,13 @@ window.addEventListener("load", function () {
         delay: 5000
     });
     mysldier_flip.setData(data);
-    var mysldier = new Slider({
+    var mysldier_light = new Slider({
         container: "slider_light",
         effect: "light",
         delay: 5000
     });
-    mysldier_bounce.setData(data);
-    var mysldier = new Slider({
+    mysldier_light.setData(data);
+    var mysldier_bounce = new Slider({
         container: "slider_bounce",
         effect: "bounce",
         delay: 5000
