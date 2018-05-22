@@ -104,7 +104,7 @@ Slider.prototype.render = function(){
         }
     };
     rivets.bind(document.getElementById(this.container.id), {
-        data: data, 
+        data: self.data, 
         controller: controller
     });
     for (var i = 0; i < list.children.length; i++) {

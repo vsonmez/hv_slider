@@ -4,6 +4,7 @@
 <p><a href="https://vsonmez.github.io/hv_slider/" target="_new">Demo Page</a></p>
 <h2>Usage</h2>
 <b>Sample Data</b>
+<i>main.js</i>
 <pre>
 var data = [
     {

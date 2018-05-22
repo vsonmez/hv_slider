@@ -1,25 +1,3 @@
-var data = [
-    {
-        img: "img/slider_01.jpg",
-        text: "lipsum 1"
-    },
-    {
-        img: "img/slider_02.jpg",
-        text: "lipsum 2"
-    },
-    {
-        img: "img/slider_03.jpg",
-        text: "lipsum 3"
-    },
-    {
-        img: "img/slider_04.jpg",
-        text: "lipsum 4"
-    },
-    {
-        img: "img/slider_05.jpg",
-        text: "lipsum 5"
-    }
-];
 window.addEventListener("load", function () {
     /*
     effects:
@@ -36,41 +14,41 @@ window.addEventListener("load", function () {
         effect: "fade",
         delay: 5000
     });
-    mysldier_fade.setData(data);
+    mysldier_fade.setData(data1);
     var mysldier_slide = new Slider({
         container: "slider_slide",
         effect: "slide",
         delay: 5000
     });
-    mysldier_slide.setData(data);
+    mysldier_slide.setData(data2);
     var mysldier_zoom = new Slider({
         container: "slider_zoom",
         effect: "zoom",
         delay: 5000
     });
-    mysldier_zoom.setData(data);
+    mysldier_zoom.setData(data3);
     var mysldier_rotate = new Slider({
         container: "slider_rotate",
         effect: "rotate",
         delay: 5000
     });
-    mysldier_rotate.setData(data);
+    mysldier_rotate.setData(data4);
     var mysldier_flip = new Slider({
         container: "slider_flip",
         effect: "flip",
         delay: 5000
     });
-    mysldier_flip.setData(data);
+    mysldier_flip.setData(data5);
     var mysldier_light = new Slider({
         container: "slider_light",
         effect: "light",
         delay: 5000
     });
-    mysldier_light.setData(data);
+    mysldier_light.setData(data6);
     var mysldier_bounce = new Slider({
         container: "slider_bounce",
         effect: "bounce",
         delay: 5000
     });
-    mysldier_bounce.setData(data);
+    mysldier_bounce.setData(data7);
 });
