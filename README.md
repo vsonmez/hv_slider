@@ -46,7 +46,10 @@ window.addEventListener("load", function () {
     var mysldier = new Slider({
         container: "slider",
         effect: "zoom",
-        delay: 5000
+        delay: 5000,
+        callbackFN : function (data) {
+            console.log(data);
+        }
     });
     mysldier.setData(data);
 });
@@ -64,6 +67,9 @@ window.addEventListener("load", function () {
             <li>light</li>
             <li>bounce</li>
         </ul>
+    </li>
+    <li>
+        <b>callbackFN :</b> callbackFN is the event declaration that you want triggered when the objects in the slider are clicked. The HV Slider sends data to the callbackFN for the clicked item.
     </li>
 </ul>
 <i>index.html</i>

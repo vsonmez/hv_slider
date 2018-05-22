@@ -54,6 +54,8 @@ Slider.prototype.render = function(){
     var li = document.createElement("li");
     li.classList.add("animated", "slider_item");
     li.setAttribute("rv-each-data", "data");
+    li.setAttribute("rv-on-click","controller.itemClickEvent");
+    li.setAttribute("rv-class-active", "data.active");
     switch (this.options.effect) {
         case "fade":
             li.setAttribute("rv-class-" + this.options.effect + "in", "data.active");
@@ -101,6 +103,11 @@ Slider.prototype.render = function(){
         clickEvent: function(event, binding) {
             self.switchSlide(binding.index);
             self.activeitem = parseInt(binding.index);
+        },
+        itemClickEvent: function (event, binding) {
+            if (self.options.callbackFN && self.options.callbackFN instanceof Function) {
+                self.options.callbackFN(binding.data);
+            }
         }
     };
     rivets.bind(document.getElementById(this.container.id), {
