@@ -1,4 +1,8 @@
 theme: jekyll-theme-cayman
 baseurl: "/hv_slider/"
+name: HV Slider
 url: "https://vsonmez.github.io/hv_slider/"
+author: Volkan Sönmez
 title: HV Slider
+description: It is a JavaScript plug-in that you can dynamically create a slider with JSON data and does not need any other library like jQuery.
+avatar: https://avatars0.githubusercontent.com/u/29775095?s=460&v=4
