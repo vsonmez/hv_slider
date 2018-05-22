@@ -90,3 +90,7 @@ window.addEventListener("load", function () {
     &lt<span>/body</span>&gt
 &lt<span>/html</span>&gt
 </pre>
+<h2>Version 0.1.1</h2>
+<ul>
+    <li><a href="https://github.com/vsonmez/hv_slider/issues/1">Click Event</a> added</li>
+</ul>
