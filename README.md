@@ -6,8 +6,7 @@
 
 <b>Sample Data</b>
 
-<code>
-    <pre>var data = [
+<code><pre>var data = [
         {
             img: "img/slider_01.jpg",
             text: "lipsum 1"
@@ -28,5 +27,4 @@
             img: "img/slider_05.jpg",
             text: "lipsum 5"
         }
-    ];</pre>
-</code>
+    ];</pre></code>
