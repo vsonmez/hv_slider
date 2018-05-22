@@ -1,7 +1,7 @@
 <h1>HV Slider</h1>
-<p><strong>A lightweight javascript slider created with <a href="https://github.com/daneden/animate.css/" target="_new">Animate.css</a> and <a href="https://github.com/mikeric/rivets" target="_new">RivetsJS</a></strong></p>
+<p><strong>A lightweight javascript slider created with <a href="https://github.com/daneden/animate.css/" target="_blank">Animate.css</a> and <a href="https://github.com/mikeric/rivets" target="_blank">RivetsJS</a></strong></p>
 <p>It is a JavaScript plug-in that you can dynamically create a slider with JSON data and does not need any other library like jQuery.</p>
-<p><a href="https://vsonmez.github.io/hv_slider/" target="_new">Demo Page</a></p>
+<p><a href="https://vsonmez.github.io/hv_slider/" target="_blank">Demo Page</a></p>
 <h2>Usage</h2>
 <b>Sample Data</b>
 <i>main.js</i>
