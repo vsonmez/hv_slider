@@ -51,19 +51,19 @@
 </pre>
 <i>index.html</i>
 <pre>
-&lt <span>!DOCTYPE html</span> &gt
-&lt <span>html</span> &gt
-&lt <span>head</span> &gt
-    &lt <span>meta charset="utf-8"</span> &gt
-    &lt <span>title</span> &gt&lt /title</span> &gt
-    &lt <span>link rel="stylesheet" type="text/css" href="./css/animate.css"</span> &gt
-    &lt <span>link rel="stylesheet" type="text/css" href="./css/main.css"</span> &gt
-&lt <span>/head</span> &gt
-&lt <span>body</span> &gt
-    &lt <span>div id="slider"</span> &gt&lt /div</span> &gt
-  &lt <span>script type="text/javascript" src="./js/rivets.js"</span> &gt&lt /script</span> &gt
-  &lt <span>script type="text/javascript" src="./js/slider.js"</span> &gt&lt /script</span> &gt
-  &lt <span>script type="text/javascript" src="./js/main.js"</span> &gt&lt /script</span> &gt
-&lt <span>/body</span> &gt
-&lt <span>/html</span> &gt
+&lt<span>!DOCTYPE html</span>&gt
+&lt<span>html</span>&gt
+&lt<span>head</span>&gt
+    &lt<span>meta charset="utf-8"</span>&gt
+    &lt<span>title</span> &gt&lt /title</span>&gt
+    &lt<span>link rel="stylesheet" type="text/css" href="./css/animate.css"</span>&gt
+    &lt<span>link rel="stylesheet" type="text/css" href="./css/main.css"</span>&gt
+&lt<span>/head</span>&gt
+&lt<span>body</span>&gt
+    &lt<span>div id="slider"</span>&gt&lt/div</span>&gt
+  &lt<span>script type="text/javascript" src="./js/rivets.js"</span>&gt&lt/script</span>&gt
+  &lt<span>script type="text/javascript" src="./js/slider.js"</span>&gt&lt/script</span>&gt
+  &lt<span>script type="text/javascript" src="./js/main.js"</span>&gt&lt/script</span>&gt
+&lt<span>/body</span>&gt
+&lt<span>/html</span>&gt
 </pre>
