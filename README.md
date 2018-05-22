@@ -3,29 +3,30 @@
 <p>It is a JavaScript plug-in that you can dynamically create a slider with JSON data and does not need any other library like jQuery.</p>
 <h2>Usage</h2>
 <b>Sample Data</b>
-<code><pre>var data = [
-        {
-            img: "img/slider_01.jpg",
-            text: "lipsum 1"
-        },
-        {
-            img: "img/slider_02.jpg",
-            text: "lipsum 2"
-        },
-        {
-            img: "img/slider_03.jpg",
-            text: "lipsum 3"
-        },
-        {
-            img: "img/slider_04.jpg",
-            text: "lipsum 4"
-        },
-        {
-            img: "img/slider_05.jpg",
-            text: "lipsum 5"
-        }
-    ];</pre></code>
-
+<pre>
+var data = [
+    {
+        img: "img/slider_01.jpg",
+        text: "lipsum 1"
+    },
+    {
+        img: "img/slider_02.jpg",
+        text: "lipsum 2"
+    },
+    {
+        img: "img/slider_03.jpg",
+        text: "lipsum 3"
+    },
+    {
+        img: "img/slider_04.jpg",
+        text: "lipsum 4"
+    },
+    {
+        img: "img/slider_05.jpg",
+        text: "lipsum 5"
+    }
+];
+</pre>
 <b>Creating Slider</b>
 <i>main.js</i>
 <pre>
