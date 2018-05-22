@@ -51,19 +51,19 @@
     </pre></code>
 <i>index.html</i>
 <code><pre>
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <meta charset="utf-8">
-            <title></title>
-            <link rel="stylesheet" type="text/css" href="./css/animate.css">
-            <link rel="stylesheet" type="text/css" href="./css/main.css">
-        </head>
-        <body>
-            <div id="slider"></div>
-          <script type="text/javascript" src="./js/rivets.js"></script>
-          <script type="text/javascript" src="./js/slider.js"></script>
-          <script type="text/javascript" src="./js/main.js"></script>
-        </body>
-        </html>
+        &lt!DOCTYPE html&gt
+        &lthtml&gt
+        &lthead&gt
+            &ltmeta charset="utf-8"&gt
+            &lttitle&gt&lt/title&gt
+            &ltlink rel="stylesheet" type="text/css" href="./css/animate.css"&gt
+            &ltlink rel="stylesheet" type="text/css" href="./css/main.css"&gt
+        &lt/head&gt
+        &ltbody&gt
+            &ltdiv id="slider"&gt&lt/div&gt
+          &ltscript type="text/javascript" src="./js/rivets.js"&gt&lt/script&gt
+          &ltscript type="text/javascript" src="./js/slider.js"&gt&lt/script&gt
+          &ltscript type="text/javascript" src="./js/main.js"&gt&lt/script&gt
+        &lt/body&gt
+        &lt/html&gt
 </pre></code>
