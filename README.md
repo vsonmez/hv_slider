@@ -29,25 +29,40 @@
 <b>Creating Slider</b>
 <i>main.js</i>
 <pre>
-        window.addEventListener("load", function () {
-            /*
-            effects:
-                fade
-                slide
-                zoom
-                rotate
-                flip
-                light
-                bounce
-            */
-            var mysldier = new Slider({
-                container: "slider",
-                effect: "zoom",
-                delay: 5000
-            });
-            mysldier.setData(data);
-        });
+window.addEventListener("load", function () {
+    /*
+    effects:
+        fade
+        slide
+        zoom
+        rotate
+        flip
+        light
+        bounce
+    */
+    var mysldier = new Slider({
+        container: "slider",
+        effect: "zoom",
+        delay: 5000
+    });
+    mysldier.setData(data);
+});
 </pre>
+<ul>
+    <li><b>container :</b> is the id attribute of the slider element in html.</li>
+    <li><b>delay :</b> specifies transition times between slider animations.</li>
+    <li><b>effect :</b> specifies the effect to use in the slider transitions:
+        <ul>
+            <li>fade</li>
+            <li>slide</li>
+            <li>zoom</li>
+            <li>rotate</li>
+            <li>flip</li>
+            <li>light</li>
+            <li>bounce</li>
+        </ul>
+    </li>
+</ul>
 <i>index.html</i>
 <pre>
 &lt<span>!DOCTYPE html</span>&gt
