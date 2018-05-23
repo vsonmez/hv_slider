@@ -4,15 +4,12 @@ body{
     font-family: sans-serif;
 }
 .slider{
-    width: 800px;
     ul{
         padding: 0;
         margin: 0;
         list-style-type: none;
     }
     .slider_list{
-        width: 800px;
-        height: 450px;
         position: relative;
         overflow: hidden;
         .slider_item{
@@ -21,6 +18,9 @@ body{
             top: 0;
             right: 0;
             bottom: 0;
+            img{
+                width: 100%;
+            }
             .slider_item_text{
                 position: absolute;
                 left: 0;
@@ -29,6 +29,9 @@ body{
                 background: fade(#000, 50);
                 color: #fff;
                 padding: 8px;
+            }
+            &.active{
+                z-index: 9000 !important;
             }
         }
     }

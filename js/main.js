@@ -24,7 +24,9 @@ window.addEventListener("load", function () {
         delay: 5000,
         callbackFN : function (data) {
             console.log(data);
-        }
+        },
+        maxWidth: 800,
+        maxHeight: 450
     });
     mysldier_slide.setData(data2);
     var mysldier_zoom = new Slider({
@@ -33,7 +35,9 @@ window.addEventListener("load", function () {
         delay: 5000,
         callbackFN : function (data) {
             console.log(data);
-        }
+        },
+        maxWidth: 800,
+        maxHeight: 450
     });
     mysldier_zoom.setData(data3);
     var mysldier_rotate = new Slider({
@@ -42,7 +46,9 @@ window.addEventListener("load", function () {
         delay: 5000,
         callbackFN : function (data) {
             console.log(data);
-        }
+        },
+        maxWidth: 800,
+        maxHeight: 450
     });
     mysldier_rotate.setData(data4);
     var mysldier_flip = new Slider({
@@ -51,7 +57,9 @@ window.addEventListener("load", function () {
         delay: 5000,
         callbackFN : function (data) {
             console.log(data);
-        }
+        },
+        maxWidth: 800,
+        maxHeight: 450
     });
     mysldier_flip.setData(data5);
     var mysldier_light = new Slider({
@@ -60,7 +68,9 @@ window.addEventListener("load", function () {
         delay: 5000,
         callbackFN : function (data) {
             console.log(data);
-        }
+        },
+        maxWidth: 800,
+        maxHeight: 450
     });
     mysldier_light.setData(data6);
     var mysldier_bounce = new Slider({
@@ -69,7 +79,9 @@ window.addEventListener("load", function () {
         delay: 5000,
         callbackFN : function (data) {
             console.log(data);
-        }
+        },
+        maxWidth: 800,
+        maxHeight: 450
     });
     mysldier_bounce.setData(data7);
 });

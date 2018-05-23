@@ -49,7 +49,9 @@ window.addEventListener("load", function () {
         delay: 5000,
         callbackFN : function (data) {
             console.log(data);
-        }
+        },
+        maxWidth: 800,
+        maxHeight: 450
     });
     mysldier.setData(data);
 });
@@ -70,6 +72,10 @@ window.addEventListener("load", function () {
     </li>
     <li>
         <b>callbackFN :</b> callbackFN is the event declaration that you want triggered when the objects in the slider are clicked. The HV Slider sends data to the callbackFN for the clicked item.
+    </li>
+    <li>
+        maxWidth: Maximum width for slider (default: 800 - numeric)
+        maxHeight: maximum height for slider (default: 450 - numeric)
     </li>
 </ul>
 <i>index.html</i>
@@ -93,4 +99,8 @@ window.addEventListener("load", function () {
 <h2>Version 0.1.1</h2>
 <ul>
     <li><a href="https://github.com/vsonmez/hv_slider/issues/1">Click Event</a> added</li>
+</ul>
+<h2>Version 0.1.2</h2>
+<ul>
+    <li><a href="https://github.com/vsonmez/hv_slider/issues/2"><a>Responsive Feature</a> added</a> added</li>
 </ul>

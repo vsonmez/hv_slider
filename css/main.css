@@ -3,17 +3,12 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-.slider {
-  width: 800px;
-}
 .slider ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 .slider .slider_list {
-  width: 800px;
-  height: 450px;
   position: relative;
   overflow: hidden;
 }
@@ -24,6 +19,9 @@ body {
   right: 0;
   bottom: 0;
 }
+.slider .slider_list .slider_item img {
+  width: 100%;
+}
 .slider .slider_list .slider_item .slider_item_text {
   position: absolute;
   left: 0;
@@ -32,6 +30,9 @@ body {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 8px;
+}
+.slider .slider_list .slider_item.active {
+  z-index: 9000 !important;
 }
 .slider .slider_control_panel {
   background: #efefef;

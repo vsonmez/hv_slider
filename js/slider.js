@@ -2,6 +2,8 @@ var Slider = function (options) {
     this.options = options;
     this.container = document.getElementById(this.options.container);
     this.container.classList.add("slider");
+    this.options.maxWidth = options.maxWidth || 800;
+    this.options.maxHeight = options.maxHeight || 450;
 };
 Slider.prototype.setData = function(data){
     this.data = data;
@@ -58,37 +60,37 @@ Slider.prototype.render = function(){
     li.setAttribute("rv-class-active", "data.active");
     switch (this.options.effect) {
         case "fade":
-            li.setAttribute("rv-class-" + this.options.effect + "in", "data.active");
-            li.setAttribute("rv-class-" + this.options.effect + "out", "data.deactive");
-            break;
+        li.setAttribute("rv-class-" + this.options.effect + "in", "data.active");
+        li.setAttribute("rv-class-" + this.options.effect + "out", "data.deactive");
+        break;
         case "slide":
-            li.setAttribute("rv-class-" + this.options.effect + "inleft", "data.active");
-            li.setAttribute("rv-class-" + this.options.effect + "outright", "data.deactive");
-            break;
+        li.setAttribute("rv-class-" + this.options.effect + "inleft", "data.active");
+        li.setAttribute("rv-class-" + this.options.effect + "outright", "data.deactive");
+        break;
         case "rotate":
-            li.setAttribute("rv-class-" + this.options.effect + "indownleft", "data.active");
-            li.setAttribute("rv-class-" + this.options.effect + "outdownright", "data.deactive");
-            break;
+        li.setAttribute("rv-class-" + this.options.effect + "indownleft", "data.active");
+        li.setAttribute("rv-class-" + this.options.effect + "outdownright", "data.deactive");
+        break;
         case "flip":
-            li.setAttribute("rv-class-" + this.options.effect + "inx", "data.active");
-            li.setAttribute("rv-class-" + this.options.effect + "outx", "data.deactive");
-            break;
+        li.setAttribute("rv-class-" + this.options.effect + "inx", "data.active");
+        li.setAttribute("rv-class-" + this.options.effect + "outx", "data.deactive");
+        break;
         case "light":
-            li.setAttribute("rv-class-" + this.options.effect + "speedin", "data.active");
-            li.setAttribute("rv-class-" + this.options.effect + "speedout", "data.deactive");
-            break;
+        li.setAttribute("rv-class-" + this.options.effect + "speedin", "data.active");
+        li.setAttribute("rv-class-" + this.options.effect + "speedout", "data.deactive");
+        break;
         case "bounce":
-            li.setAttribute("rv-class-" + this.options.effect + "indown", "data.active");
-            li.setAttribute("rv-class-" + this.options.effect + "outdown", "data.deactive");
-            break;
+        li.setAttribute("rv-class-" + this.options.effect + "indown", "data.active");
+        li.setAttribute("rv-class-" + this.options.effect + "outdown", "data.deactive");
+        break;
         case "zoom":
-            li.setAttribute("rv-class-" + this.options.effect + "inleft", "data.active");
-            li.setAttribute("rv-class-" + this.options.effect + "outright", "data.deactive");
-            break;
+        li.setAttribute("rv-class-" + this.options.effect + "inleft", "data.active");
+        li.setAttribute("rv-class-" + this.options.effect + "outright", "data.deactive");
+        break;
         default:
-            li.setAttribute("rv-class-fadein", "data.active");
-            li.setAttribute("rv-class-fadeout", "data.deactive");
-            break;
+        li.setAttribute("rv-class-fadein", "data.active");
+        li.setAttribute("rv-class-fadeout", "data.deactive");
+        break;
     }
     list.appendChild(li);
     var img = document.createElement("img");
@@ -119,4 +121,29 @@ Slider.prototype.render = function(){
     }
     this.container.children[1].children[0].classList.add("active");
     this.autoRun();
+    function calculateSizes() {
+        if (window.outerWidth < self.options.maxWidth) {
+            self.container.style.width = window.outerWidth + "px";
+            self.container.children[0].style.width = window.outerWidth + "px";
+            self.container.style.height = self.container.children[0].children[0].children[0].offsetHeight + "px";
+            self.container.children[0].style.height = self.container.children[0].children[0].children[0].offsetHeight + "px";
+        } else {
+            self.container.style.width = self.options.maxWidth + "px";
+            self.container.children[0].style.width = self.options.maxWidth + "px";
+            self.container.style.height = self.options.maxHeight + "px";
+            self.container.children[0].style.height = self.options.maxHeight + "px";
+        }
+    }
+    function checkResize() {
+        var image = self.container.children[0].children[0].children[0];
+        image.onload = function () {
+            calculateSizes();
+        };
+        window.addEventListener("resize", function () {
+            if (self.options.maxWidth.toString().indexOf("%") === -1) {
+                calculateSizes();
+            }
+        })
+    }
+    checkResize();
 };
