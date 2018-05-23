@@ -30,7 +30,7 @@ var data = [
     }
 ];
 </pre>
-<p>You can add as many attributes as you want to the data field. Within the click event, for each item, the data you specify is returned.</p>
+<p>You can add as many attributes as you want to the data field. Within the click event, for each item, the data you specify is returned.  Like "mySpecialData" in the first object of the array.</p>
 <h3>Creating Slider</h3>
 <i>main.js</i>
 <pre>
