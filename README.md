@@ -76,8 +76,8 @@ window.addEventListener("load", function () {
         <b>callbackFN :</b> callbackFN is the event declaration that you want triggered when the objects in the slider are clicked. The HV Slider sends data to the callbackFN for the clicked item.
     </li>
     <li>
-        maxWidth: Maximum width for slider (default: 800 - numeric)
-        maxHeight: maximum height for slider (default: 450 - numeric)
+        <b>maxWidth :</b> Maximum width for slider (default: 800 - numeric)
+        <b>maxHeight :</b> maximum height for slider (default: 450 - numeric)
     </li>
 </ul>
 <i>index.html</i>
