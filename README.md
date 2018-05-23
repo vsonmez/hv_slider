@@ -9,7 +9,8 @@
 var data = [
     {
         img: "img/slider_01.jpg",
-        text: "lipsum 1"
+        text: "lipsum 1",
+        mySpecialData: "lorem"
     },
     {
         img: "img/slider_02.jpg",
@@ -29,6 +30,7 @@ var data = [
     }
 ];
 </pre>
+<p>You can add as many attributes as you want to the data field. Within the click event, for each item, the data you specify is returned.</p>
 <h3>Creating Slider</h3>
 <i>main.js</i>
 <pre>
