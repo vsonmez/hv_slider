@@ -102,5 +102,5 @@ window.addEventListener("load", function () {
 </ul>
 <h2>Version 0.1.2</h2>
 <ul>
-    <li><a href="https://github.com/vsonmez/hv_slider/issues/2"><a>Responsive Feature</a> added</a> added</li>
+    <li><a href="https://github.com/vsonmez/hv_slider/issues/2">Responsive Feature</a> added</a> added</li>
 </ul>
